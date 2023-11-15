@@ -33,6 +33,9 @@ a {
 .container {
   width: 100%; /* Adjust to your layout needs */
   max-width: 1200px; /* Set maximum width for content */
+  height: auto;
+  overflow-y: auto;
+  position: relative;
   margin: 0 auto; /* Center container */
   padding: 0 20px; /* Add padding inside container */
 }
@@ -46,8 +49,9 @@ li {
 .button-wrap {
   margin: 2rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  position: sticky;
+  top: 0;
+  justify-content: flex-end; /* Optional: Align the button to the right side of the container */
 }
 
 .home-button {
@@ -57,7 +61,6 @@ li {
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  margin: 0 auto;
 }
 
 .home-button:hover {
