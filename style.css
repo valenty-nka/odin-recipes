@@ -7,7 +7,7 @@
 
 body {
   font-family: Baskerville, serif; /* Define your preferred font stack */
-  font-size: 16px; /* Set a base font size */
+  font-size: 1.2rem; /* Set a base font size */
   line-height: 1.6; /* Adjust line height for readability */
   background-color: #f9efe7be;
   /* Background color for the body */
@@ -22,7 +22,8 @@ h5,
 h6 {
   /* Define heading styles */
   font-weight: bold;
-  /* Add other properties like margin, padding, etc. */
+  margin: 10px 0;
+  text-transform: capitalize;
 }
 
 a {
@@ -38,15 +39,12 @@ a {
 
 /* Remove default list styles from both unordered and ordered lists */
 ul,
-ol,
 li {
   list-style: none;
-  display: block;
-  overflow: hidden;
-  /* Additional styles for both types of lists */
 }
 
 .button-wrap {
+  margin: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,7 +81,7 @@ header h1 {
 }
 .card li {
   width: 100%;
-  height: 20rem;
+  height: 50%;
   background-color: #f9efe7be;
   text-align: center;
 }
@@ -109,4 +107,8 @@ header h1 {
 
 .image img {
   width: 50%;
+}
+
+.instructions li::marker {
+  padding-left: 3px;
 }
