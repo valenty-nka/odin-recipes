@@ -40,7 +40,7 @@ a {
 /* Remove default list styles from both unordered and ordered lists */
 ul,
 li {
-  list-style: none;
+  list-style-type: none;
 }
 
 .button-wrap {
@@ -108,7 +108,9 @@ header h1 {
 .image img {
   width: 50%;
 }
-
-.instructions li::marker {
-  padding-left: 3px;
+.ingridients ul li {
+  list-style-type: none;
+}
+.instructions ol li {
+  list-style-type: decimal;
 }
