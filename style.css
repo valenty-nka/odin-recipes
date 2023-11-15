@@ -1,0 +1,87 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Baskerville, serif; /* Define your preferred font stack */
+  font-size: 16px; /* Set a base font size */
+  line-height: 1.6; /* Adjust line height for readability */
+  background-color: #f9efe7be;
+  /* Background color for the body */
+  color: #333; /* Text color */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Define heading styles */
+  font-weight: bold;
+  /* Add other properties like margin, padding, etc. */
+}
+
+a {
+  color: rgb(111, 20, 181); /* Define link color */
+  text-decoration: none; /* Remove default underline */
+}
+.container {
+  width: 100%; /* Adjust to your layout needs */
+  max-width: 1200px; /* Set maximum width for content */
+  margin: 0 auto; /* Center container */
+  padding: 0 20px; /* Add padding inside container */
+}
+
+/* Remove default list styles from both unordered and ordered lists */
+ul,
+ol,
+li {
+  list-style: none;
+  /* Additional styles for both types of lists */
+}
+
+.home-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #337ab7; /* Change color as needed */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  /* Additional styling for the button */
+}
+
+.home-button:hover {
+  background-color: #135688; /* Change color on hover as needed */
+  /* Additional styling for button hover state */
+}
+
+header h1 {
+  text-align: center;
+}
+
+.recipes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex-basis: 30%;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card img:hover {
+  scale: 1.03;
+  transition: all 0.2s ease-out;
+}
+
+.card a:hover {
+  color: rgb(104, 73, 5);
+}
